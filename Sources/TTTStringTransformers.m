@@ -26,7 +26,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-NSValueTransformerName const TTTCapitalizedStringTransformerName = @"TTTCapitalizedStringTransformerName";
+NSValueTransformerName const TTTCapitalizedStringTransformerName = @"TTTCapitalizedStringTransformer";
 NSValueTransformerName const TTTUppercaseStringTransformerName = @"TTTUppercaseStringTransformer";
 NSValueTransformerName const TTTLowercaseStringTransformerName = @"TTTLowercaseStringTransformer";
 NSValueTransformerName const TTTCamelCaseStringTransformerName = @"TTTCamelCaseStringTransformer";

@@ -29,8 +29,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-NSValueTransformerName const TTTISO8601DateTransformerName = @"TTTISO8601DateTransformerName";
-NSValueTransformerName const TTTRFC2822DateTransformerName = @"TTTRFC2822DateTransformerName";
+NSValueTransformerName const TTTISO8601DateTransformerName = @"TTTISO8601DateTransformer";
+NSValueTransformerName const TTTRFC2822DateTransformerName = @"TTTRFC2822DateTransformer";
 
 static NSString * TTTISO8601TimestampFromDate(NSDate *date) {
     static NSDateFormatter *_iso8601DateFormatter = nil;

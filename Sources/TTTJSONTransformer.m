@@ -25,7 +25,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-NSValueTransformerName const TTTJSONTransformerName = @"TTTJSONTransformerName";
+NSValueTransformerName const TTTJSONTransformerName = @"TTTJSONTransformer";
 
 @implementation TTTJSONTransformer
 @synthesize readingOptions;
