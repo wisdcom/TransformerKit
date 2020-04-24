@@ -98,6 +98,9 @@ NSData * TTTDigestWithAlgorithmForData(TTTDigestAlgorithm algorithm, NSData *dat
     unsigned char output[length];
 
     switch (algorithm) {
+		// 'CC_MD2', 'CC_MD4', and 'CC_MD5' are deprecated: first deprecated in iOS 13.0
+		#pragma clang diagnostic push
+		#pragma clang diagnostic ignored "-Wdeprecated-declarations"
         case TTTMD2:
             CC_MD2(data.bytes, (CC_LONG)data.length, output);
             break;
@@ -107,6 +110,7 @@ NSData * TTTDigestWithAlgorithmForData(TTTDigestAlgorithm algorithm, NSData *dat
         case TTTMD5:
             CC_MD5(data.bytes, (CC_LONG)data.length, output);
             break;
+		#pragma clang diagnostic pop
         case TTTSHA1:
             CC_SHA1(data.bytes, (CC_LONG)data.length, output);
             break;
